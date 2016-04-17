@@ -2,22 +2,22 @@ Circuit: * C:\Users\nicola\Documents\git\AnalogSynth\VCO\Simulation\VCO.asc
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Sun Apr 17 16:12:08 2016
-Total elapsed time: 25.073 seconds.
+Date: Sun Apr 17 16:22:31 2016
+Total elapsed time: 3.460 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2294775
-traniter = 2294775
-tranpoints = 718138
-accept = 482921
-rejected = 235217
+totiter = 286123
+traniter = 286123
+tranpoints = 86695
+accept = 60671
+rejected = 26024
 matrix size = 26
 fillins = 4
 solver = Normal
-Thread vector: 16.4/9.6[2] 3.8/2.8[2] 2.3/1.6[2] 0.3/0.3[1]  2592/500
-Matrix Compiler1: 1.88 KB object code size  0.7/0.5/[0.2]
-Matrix Compiler2: 2.71 KB object code size  0.4/0.6/[0.3]
+Thread vector: 11.7/8.2[2] 3.2/2.2[2] 1.6/1.2[2] 0.2/0.6[1]  2592/500
+Matrix Compiler1:     110 opcodes  0.5/[0.2]/0.3
+Matrix Compiler2: 2.71 KB object code size  0.4/0.4/[0.3]
 
 
