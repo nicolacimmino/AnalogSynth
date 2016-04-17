@@ -2275,16 +2275,16 @@ high speed (Philips)</description>
 <instance part="SUPPLY3" gate="GND" x="55.88" y="15.24"/>
 <instance part="SUPPLY4" gate="GND" x="40.64" y="68.58"/>
 <instance part="IC1" gate="G$1" x="78.74" y="40.64" smashed="yes">
-<attribute name="NAME" x="86.36" y="48.26" size="1.778" layer="95"/>
+<attribute name="NAME" x="78.74" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="86.36" y="44.45" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="G$1" x="127" y="38.1" smashed="yes" rot="MR180">
-<attribute name="NAME" x="134.62" y="35.56" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="134.62" y="31.75" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="127" y="38.1" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="134.62" y="34.29" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="D1" gate="G$1" x="76.2" y="71.12" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.28" y="75.7174" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="86.36" y="68.3514" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="76.2" y="75.9714" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R4" gate="G$1" x="104.14" y="40.64" rot="R180">
 <attribute name="SPICEPREFIX" x="104.14" y="38.1" size="1.778" layer="96" rot="R180" display="off"/>
@@ -2387,6 +2387,7 @@ high speed (Philips)</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="78.74" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<junction x="48.26" y="81.28"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="+VS"/>
