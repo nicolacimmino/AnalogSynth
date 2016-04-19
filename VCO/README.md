@@ -17,3 +17,5 @@
 
 ![Simulation](Simulation/FFT_4k.png)
 
+
+![Simulation](Simulation/VctrlFreq.png)
