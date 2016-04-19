@@ -9,8 +9,6 @@
 ![Simulation](Simulation/simulation2.png)
 
 
-![Simulation](Simulation/ControlLin.png)
-
 
 ![Simulation](Simulation/FFT_80.png)
 
