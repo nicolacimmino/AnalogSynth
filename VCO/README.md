@@ -9,11 +9,11 @@
 ![Simulation](Simulation/simulation2.png)
 
 
-![Simulation](Simulation/ControlLin.png)
-
 
 ![Simulation](Simulation/FFT_80.png)
 
 
 ![Simulation](Simulation/FFT_4k.png)
 
+
+![Simulation](Simulation/VctrlFreq.png)
