@@ -13693,8 +13693,8 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="C15" library="capacitor-wima" deviceset="C" device="5/2.5" value="100n"/>
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
-<part name="PAD1" library="wirepad" deviceset="3,17/1,1" device="" value="CV1"/>
-<part name="PAD2" library="wirepad" deviceset="3,17/1,1" device="" value="CV2"/>
+<part name="PAD1" library="wirepad" deviceset="3,17/1,1" device="" value="CV"/>
+<part name="PAD2" library="wirepad" deviceset="3,17/1,1" device="" value="TUNE"/>
 <part name="PAD3" library="wirepad" deviceset="3,17/1,1" device="" value="FM"/>
 <part name="PAD4" library="wirepad" deviceset="3,17/1,1" device="" value="PWM"/>
 <part name="PAD5" library="wirepad" deviceset="3,17/1,1" device="" value="SAW"/>

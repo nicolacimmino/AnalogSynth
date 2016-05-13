@@ -13703,7 +13703,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="PAD5" library="wirepad" deviceset="3,17/1,1" device="" value="SAW"/>
 <part name="PAD6" library="wirepad" deviceset="3,17/1,1" device="" value="PULSE"/>
 <part name="PAD7" library="wirepad" deviceset="3,17/1,1" device="" value="SYNC"/>
-<part name="R25" library="eagle-ltspice" deviceset="R" device="0207/10" value="100K">
+<part name="R25" library="eagle-ltspice" deviceset="R" device="0207/10" value="1K">
 <attribute name="SPICEPREFIX" value=""/>
 </part>
 </parts>
