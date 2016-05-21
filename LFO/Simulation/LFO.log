@@ -1,0 +1,68 @@
+Circuit: * C:\Users\nicola\Documents\git\AnalogSynth\LFO\Simulation\LFO.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03922
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 1.02313
+vernier = 0.00520833
+vernier = 0.00260417
+Gmin = 1.01616
+vernier = 0.00347222
+vernier = 0.00173611
+vernier = 0.00231481
+Gmin = 1.01205
+vernier = 0.00115741
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 1.0104
+vernier = 0.00102881
+Gmin = 1.00812
+vernier = 0.000514403
+vernier = 0.00068587
+Gmin = 1.00704
+vernier = 0.000514403
+vernier = 0.00068587
+vernier = 0.000514402
+Gmin = 1.00622
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Heightened Def Con from 0.0199445 to 0.0199445
+
+Date: Sat May 21 22:24:12 2016
+Total elapsed time: 82.740 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6364490
+traniter = 6357689
+tranpoints = 2980672
+accept = 2133778
+rejected = 846895
+matrix size = 23
+fillins = 17
+solver = Normal
+Thread vector: 15.9/9.5[2] 5.2/4.1[2] 2.3/1.9[2] 9.5/3.3[2]  2592/500
+Matrix Compiler1:      97 opcodes  0.7/[0.3]/0.5
+Matrix Compiler2: 2.51 KB object code size  1.5/1.0/[0.5]
+
+

@@ -1,0 +1,11 @@
+Title: * C:\Users\nicola\Documents\git\AnalogSynth\LFO\Simulation\LFO.asc
+Date: Sat May 21 22:22:51 2016
+Plotname: Transient Analysis
+Flags: real forward
+No. Variables: 39
+No. Points:            0
+Offset:   0.0000000000000000e+000
+Command: Linear Technology Corporation LTspice IV
+Backannotation: u2 1 2 3 4 5
+Backannotation: u1 1 2 3 4 5
+Variables:
