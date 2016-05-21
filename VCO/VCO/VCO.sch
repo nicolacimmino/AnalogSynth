@@ -13580,7 +13580,11 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.508" drill="0">
+<clearance class="0" value="0.508"/>
+</class>
+<class number="1" name="Power" width="1.016" drill="0">
+<clearance class="1" value="0.508"/>
 </class>
 </classes>
 <parts>
@@ -13690,22 +13694,22 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <part name="C4" library="capacitor-wima" deviceset="C" device="5/2.5" value="100n"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="PAD1" library="wirepad" deviceset="3,17/1,1" device="" value="CV"/>
-<part name="PAD2" library="wirepad" deviceset="3,17/1,1" device="" value="TUNE"/>
-<part name="PAD3" library="wirepad" deviceset="3,17/1,1" device="" value="FM"/>
-<part name="PAD4" library="wirepad" deviceset="3,17/1,1" device="" value="PWM"/>
-<part name="PAD7" library="wirepad" deviceset="3,17/1,1" device="" value="SAW"/>
-<part name="PAD6" library="wirepad" deviceset="3,17/1,1" device="" value="PULSE"/>
-<part name="PAD5" library="wirepad" deviceset="3,17/1,1" device="" value="SYNC"/>
+<part name="CV" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="TUNE" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="FM" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="PWM" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="SAW" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="PULSE" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="SYNC" library="wirepad" deviceset="3,17/1,1" device=""/>
 <part name="R18" library="eagle-ltspice" deviceset="R" device="0207/10" value="1K">
 <attribute name="SPICEPREFIX" value=""/>
 </part>
-<part name="PAD8" library="wirepad" deviceset="3,17/1,1" device="" value="PW"/>
-<part name="PAD9" library="wirepad" deviceset="3,17/1,1" device="" value="CV"/>
-<part name="PAD10" library="wirepad" deviceset="3,17/1,1" device="" value="CV"/>
+<part name="PW" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="VCC" library="wirepad" deviceset="3,17/1,1" device=""/>
+<part name="VEE" library="wirepad" deviceset="3,17/1,1" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="VEE" device=""/>
-<part name="PAD11" library="wirepad" deviceset="3,17/1,1" device="" value="CV"/>
+<part name="GND" library="wirepad" deviceset="3,17/1,1" device=""/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
 <part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
 <part name="C17" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="10u"/>
@@ -13876,24 +13880,30 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <instance part="C4" gate="G$1" x="38.1" y="-33.02"/>
 <instance part="SUPPLY14" gate="GND" x="38.1" y="-40.64"/>
 <instance part="SUPPLY10" gate="GND" x="20.32" y="-17.78"/>
-<instance part="PAD1" gate="1" x="-35.56" y="83.82"/>
-<instance part="PAD2" gate="1" x="-35.56" y="60.96"/>
-<instance part="PAD3" gate="1" x="-35.56" y="38.1"/>
-<instance part="PAD4" gate="1" x="-20.32" y="-12.7"/>
-<instance part="PAD7" gate="1" x="114.3" y="7.62" rot="R180"/>
-<instance part="PAD6" gate="1" x="101.6" y="-20.32" rot="R180"/>
-<instance part="PAD5" gate="1" x="93.98" y="58.42" rot="R270"/>
+<instance part="CV" gate="1" x="-35.56" y="83.82"/>
+<instance part="TUNE" gate="1" x="-35.56" y="60.96"/>
+<instance part="FM" gate="1" x="-35.56" y="38.1"/>
+<instance part="PWM" gate="1" x="-20.32" y="-12.7"/>
+<instance part="SAW" gate="1" x="114.3" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.443" y="10.8458" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="115.443" y="10.922" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PULSE" gate="1" x="101.6" y="-20.32" rot="R180"/>
+<instance part="SYNC" gate="1" x="93.98" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="90.297" y="60.2742" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.678" y="59.563" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="R18" gate="G$1" x="93.98" y="48.26" rot="R270">
 <attribute name="SPICEPREFIX" x="96.52" y="48.26" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="PAD8" gate="1" x="-20.32" y="-25.4"/>
-<instance part="PAD9" gate="1" x="-55.88" y="-2.54"/>
-<instance part="PAD10" gate="1" x="-55.88" y="-17.78"/>
+<instance part="PW" gate="1" x="-20.32" y="-25.4"/>
+<instance part="VCC" gate="1" x="-55.88" y="-2.54"/>
+<instance part="VEE" gate="1" x="-55.88" y="-17.78"/>
 <instance part="SUPPLY3" gate="G$1" x="-45.72" y="5.08" smashed="yes">
 <attribute name="VALUE" x="-47.625" y="8.255" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="-45.72" y="-25.4" rot="R180"/>
-<instance part="PAD11" gate="1" x="-55.88" y="-10.16"/>
+<instance part="GND" gate="1" x="-55.88" y="-10.16"/>
 <instance part="SUPPLY36" gate="GND" x="-33.02" y="-12.7"/>
 <instance part="C16" gate="G$1" x="-43.18" y="-2.54" rot="R90"/>
 <instance part="C17" gate="G$1" x="-40.64" y="-17.78" rot="R270"/>
@@ -13930,7 +13940,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <junction x="40.64" y="43.18"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
@@ -14022,7 +14032,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <wire x1="20.32" y1="-7.62" x2="22.86" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PAD11" gate="1" pin="P"/>
+<pinref part="GND" gate="1" pin="P"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 <wire x1="-53.34" y1="-10.16" x2="-38.1" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="+"/>
@@ -14033,7 +14043,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <junction x="-38.1" y="-10.16"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="IC3" gate="G$1" pin="+VS"/>
 <pinref part="SUPPLY19" gate="G$1" pin="VCC"/>
@@ -14096,7 +14106,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <junction x="27.94" y="10.16"/>
 </segment>
 <segment>
-<pinref part="PAD9" gate="1" pin="P"/>
+<pinref part="VCC" gate="1" pin="P"/>
 <wire x1="-53.34" y1="-2.54" x2="-45.72" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
 <wire x1="-45.72" y1="-2.54" x2="-45.72" y2="2.54" width="0.1524" layer="91"/>
@@ -14126,7 +14136,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <wire x1="48.26" y1="55.88" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VEE" class="0">
+<net name="VEE" class="1">
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="VEE"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -14184,7 +14194,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <junction x="27.94" y="-27.94"/>
 </segment>
 <segment>
-<pinref part="PAD10" gate="1" pin="P"/>
+<pinref part="VEE" gate="1" pin="P"/>
 <wire x1="-53.34" y1="-17.78" x2="-45.72" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VEE"/>
 <wire x1="-45.72" y1="-17.78" x2="-45.72" y2="-22.86" width="0.1524" layer="91"/>
@@ -14242,23 +14252,23 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="83.82" x2="-12.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="60.96" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="38.1" x2="-12.7" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="38.1" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="IN+"/>
 <wire x1="-15.24" y1="60.96" x2="-12.7" y2="60.96" width="0.1524" layer="91"/>
 <junction x="-12.7" y="60.96"/>
 <wire x1="-12.7" y1="60.96" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-12.7" y="38.1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="PAD2" gate="1" pin="P"/>
+<pinref part="TUNE" gate="1" pin="P"/>
 <wire x1="-30.48" y1="60.96" x2="-33.02" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="60.96" x2="-30.48" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="60.96" x2="-25.4" y2="60.96" width="0.1524" layer="91"/>
@@ -14299,7 +14309,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="PAD3" gate="1" pin="P"/>
+<pinref part="FM" gate="1" pin="P"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="38.1" x2="-25.4" y2="38.1" width="0.1524" layer="91"/>
 </segment>
@@ -14338,14 +14348,14 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="PAD4" gate="1" pin="P"/>
+<pinref part="PWM" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="-25.4" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="PAD8" gate="1" pin="P"/>
+<pinref part="PW" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -14368,7 +14378,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <wire x1="55.88" y1="7.62" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="IN-"/>
 <wire x1="55.88" y1="-15.24" x2="60.96" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="PAD7" gate="1" pin="P"/>
+<pinref part="SAW" gate="1" pin="P"/>
 <wire x1="99.06" y1="7.62" x2="111.76" y2="7.62" width="0.1524" layer="91"/>
 <junction x="99.06" y="7.62"/>
 </segment>
@@ -14395,7 +14405,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="PAD1" gate="1" pin="P"/>
+<pinref part="CV" gate="1" pin="P"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="83.82" x2="-25.4" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -14403,20 +14413,33 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <net name="N$23" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="S"/>
-<pinref part="PAD6" gate="1" pin="P"/>
+<pinref part="PULSE" gate="1" pin="P"/>
 <wire x1="93.98" y1="-20.32" x2="99.06" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="N$15" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="PAD5" gate="1" pin="P"/>
+<pinref part="SYNC" gate="1" pin="P"/>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,-33.2994,84.9926,CV,,,,,"/>
+<approved hash="113,1,-33.2994,62.1326,TUNE,,,,,"/>
+<approved hash="113,1,-33.2994,39.2726,FM,,,,,"/>
+<approved hash="113,1,-18.0594,-11.5274,PWM,,,,,"/>
+<approved hash="113,1,112.039,8.58943,SAW,,,,,"/>
+<approved hash="113,1,98.6476,-21.4926,PULSE,,,,,"/>
+<approved hash="113,1,94.0102,57.1034,SYNC,,,,,"/>
+<approved hash="113,1,-18.0594,-24.2274,PW,,,,,"/>
+<approved hash="113,1,-53.6194,-1.36737,VCC,,,,,"/>
+<approved hash="113,1,-53.6194,-16.6074,VEE,,,,,"/>
+<approved hash="113,1,-53.6194,-8.98737,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
