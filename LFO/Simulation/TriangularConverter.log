@@ -2,21 +2,21 @@ Circuit: * C:\Users\nicola\Documents\git\AnalogSynth\LFO\Simulation\TriangularCo
 
 Per .tran options, skipping operating point for transient analysis.
 
-Date: Sat May 21 22:53:28 2016
-Total elapsed time: 0.265 seconds.
+Date: Sun May 22 10:59:14 2016
+Total elapsed time: 0.548 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 28747
-traniter = 28747
-tranpoints = 14298
-accept = 11793
-rejected = 2505
+totiter = 59444
+traniter = 59444
+tranpoints = 28995
+accept = 23423
+rejected = 5572
 matrix size = 11
 fillins = 1
 solver = Normal
-Matrix Compiler1:      30 opcodes  0.1/[0.1]/0.1
-Matrix Compiler2: 1017 bytes object code size  0.1/0.2/[0.1]
+Matrix Compiler1: 508 bytes object code size  0.2/0.1/[0.0]
+Matrix Compiler2: 1017 bytes object code size  0.2/0.2/[0.1]
 
 
