@@ -12278,6 +12278,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R7" library="pot" deviceset="TRIM_EU-" device="CA6V" value="10K"/>
 <part name="R19" library="pot" deviceset="TRIM_EU-" device="CA6V" value="10K"/>
 <part name="R21" library="pot" deviceset="TRIM_EU-" device="CA6V" value="10K"/>
+<part name="R25" library="pot" deviceset="3RP/1610N" device="" value="10k"/>
+<part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12288,7 +12290,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <text x="-53.34" y="45.72" size="1.778" layer="91">FM</text>
 <text x="119.38" y="2.54" size="1.778" layer="91">SAW</text>
 <text x="121.92" y="-17.78" size="1.778" layer="91">PULSE</text>
-<text x="-53.34" y="-22.86" size="1.778" layer="91">PWM</text>
+<text x="-55.88" y="-17.78" size="1.778" layer="91">PWM</text>
 <text x="-30.48" y="-7.62" size="1.778" layer="91">PW</text>
 <text x="119.38" y="93.98" size="1.778" layer="91">SYNC</text>
 </plain>
@@ -12430,12 +12432,12 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="SUPPLY35" gate="GND" x="109.22" y="-35.56"/>
 <instance part="X5" gate="G$1" x="114.3" y="-2.54"/>
 <instance part="SUPPLY34" gate="GND" x="109.22" y="-12.7"/>
-<instance part="X3" gate="G$1" x="-48.26" y="-27.94" rot="MR0"/>
-<instance part="SUPPLY6" gate="GND" x="-43.18" y="-38.1"/>
-<instance part="R3" gate="G$1" x="-22.86" y="-12.7"/>
-<instance part="SUPPLY11" gate="GND" x="-22.86" y="-20.32"/>
-<instance part="SUPPLY10" gate="G$1" x="-22.86" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="-24.765" y="-1.905" size="1.778" layer="96"/>
+<instance part="X3" gate="G$1" x="-48.26" y="-22.86" rot="MR0"/>
+<instance part="SUPPLY6" gate="GND" x="-43.18" y="-33.02"/>
+<instance part="R3" gate="G$1" x="-20.32" y="-7.62"/>
+<instance part="SUPPLY11" gate="GND" x="-20.32" y="-15.24"/>
+<instance part="SUPPLY10" gate="G$1" x="-20.32" y="2.54" smashed="yes">
+<attribute name="VALUE" x="-22.225" y="5.715" size="1.778" layer="96"/>
 </instance>
 <instance part="X4" gate="G$1" x="114.3" y="88.9"/>
 <instance part="SUPPLY33" gate="GND" x="109.22" y="78.74"/>
@@ -12448,6 +12450,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="R7" gate="1" x="-20.32" y="20.32"/>
 <instance part="R19" gate="1" x="88.9" y="-20.32"/>
 <instance part="R21" gate="1" x="93.98" y="20.32"/>
+<instance part="R25" gate="G$1" x="-20.32" y="-25.4"/>
+<instance part="SUPPLY37" gate="GND" x="-20.32" y="-33.02"/>
 </instances>
 <busses>
 </busses>
@@ -12582,7 +12586,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <segment>
 <pinref part="X3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="-43.18" y1="-33.02" x2="-43.18" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-27.94" x2="-43.18" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="A"/>
@@ -12600,6 +12604,10 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <segment>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
 <pinref part="R21" gate="1" pin="A"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="A"/>
+<pinref part="SUPPLY37" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -12656,6 +12664,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <segment>
 <pinref part="R3" gate="G$1" pin="E"/>
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
+<wire x1="-20.32" y1="0" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -12852,20 +12861,20 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$27" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-7.62" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-20.32" x2="-38.1" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="X3" gate="G$1" pin="2"/>
 <pinref part="X3" gate="G$1" pin="3"/>
-<wire x1="-43.18" y1="-30.48" x2="-38.1" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-30.48" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="-38.1" y="-25.4"/>
-<wire x1="-7.62" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-25.4" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-25.4" x2="-38.1" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="E"/>
+<wire x1="-38.1" y1="-20.32" x2="-20.32" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-20.32"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -12970,6 +12979,13 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <wire x1="104.14" y1="-25.4" x2="104.14" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="104.14" y="-20.32"/>
 <pinref part="R19" gate="1" pin="S"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="S"/>
+<wire x1="-7.62" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
