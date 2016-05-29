@@ -1,0 +1,2 @@
+
+![ADSR](Simulation/adsr.png)
