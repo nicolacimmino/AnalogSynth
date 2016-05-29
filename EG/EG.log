@@ -1,0 +1,33 @@
+Circuit: * C:\Users\nicola\Documents\git\AnalogSynth\EG\EG.asc
+
+Limiting rise time of source v1 to 0.01
+Limiting fall time of source v1 to 0.01
+Direct Newton iteration for .op point skipped.
+Gmin stepping method for .op point skipped.
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Sun May 29 20:50:41 2016
+Total elapsed time: 0.168 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2666
+traniter = 2561
+tranpoints = 1163
+accept = 1124
+rejected = 39
+matrix size = 27
+fillins = 31
+solver = Normal
+Thread vector: 17.3/12.5[2] 5.7/3.4[2] 3.0/2.5[2] 0.2/0.5[1]  2592/500
+Matrix Compiler1: 2.97 KB object code size  1.1/0.7/[0.3]
+Matrix Compiler2: 3.41 KB object code size  0.7/0.7/[0.6]
+
+
