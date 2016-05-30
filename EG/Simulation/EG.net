@@ -3,7 +3,7 @@ XU1 N004 N001 VCC VSS N001 LT1001
 C1 N004 0 1µF
 R1 N004 N003 10k
 D1 N008 N002 D
-V1 N002 0 PULSE(0 5 0 0 0 200mS 300mS 1)
+V1 N002 0 PULSE(0 5 0 1uS 1uS 200mS 400mS)
 V2 VCC 0 15
 V3 0 VSS 15
 XU2 N013 N001 VCC VSS N011 LT1001
@@ -26,7 +26,7 @@ R8 OUT N005 10k
 D4 N007 P001 D
 .model D D
 .lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.dio
-.tran 500mS
+.tran 0 800mS 350mS
 .lib LTC.lib
 .backanno
 .end

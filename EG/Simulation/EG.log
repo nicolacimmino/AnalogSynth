@@ -1,7 +1,5 @@
 Circuit: * C:\Users\nicola\Documents\git\AnalogSynth\EG\Simulation\EG.asc
 
-Limiting rise time of source v1 to 0.01
-Limiting fall time of source v1 to 0.01
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -48,22 +46,22 @@ Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
 
-Date: Mon May 30 09:06:44 2016
-Total elapsed time: 0.771 seconds.
+Date: Mon May 30 12:23:50 2016
+Total elapsed time: 0.746 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 9459
-traniter = 2671
-tranpoints = 1190
-accept = 1146
-rejected = 44
+totiter = 10496
+traniter = 3708
+tranpoints = 1539
+accept = 1413
+rejected = 126
 matrix size = 34
 fillins = 50
 solver = Normal
-Thread vector: 32.9/17.3[3] 7.7/4.2[3] 3.8/2.2[3] 0.3/0.8[1]  2592/500
-Matrix Compiler1: 4.41 KB object code size  1.5/0.9/[0.5]
-Matrix Compiler2: 4.59 KB object code size  0.9/1.0/[0.5]
+Thread vector: 29.2/17.8[3] 7.2/4.4[3] 3.8/2.3[3] 0.6/0.4[2]  2592/500
+Matrix Compiler1: 4.41 KB object code size  1.5/0.9/[0.4]
+Matrix Compiler2: 4.59 KB object code size  0.8/1.1/[0.6]
 
 
